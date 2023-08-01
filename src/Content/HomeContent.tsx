@@ -12,7 +12,8 @@ interface Props {
 export const HomeContent = (props: Props) => {
   const contentStyle: React.CSSProperties = {
     color: '#fff',
-    background: 'linear-gradient(to right, #4880EC, #019CAD)',
+    background:
+      'linear-gradient(325deg, rgba(2,0,36,1) 0%, rgba(7,31,0,1) 0%, rgba(0,140,255,1) 84%);',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
@@ -28,7 +29,7 @@ export const HomeContent = (props: Props) => {
 
   const bannerJob: React.CSSProperties = {
     fontSize: '20px',
-    fontFamily: 'sans-serif', // <-- FONT IS USED HERE
+    fontFamily: 'Barlow', // <-- FONT IS USED HERE
   };
 
   return (
