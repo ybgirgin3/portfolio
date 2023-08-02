@@ -13,7 +13,6 @@ function App(): JSX.Element {
       <React.StrictMode>
         <BrowserRouter>
           <Header/>
-          <hr/>
           <Routes>
             <Route path="/" Component={HomeScreen}/>
             <Route path="/aboutme" Component={AboutScreen}/>
