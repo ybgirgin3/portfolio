@@ -1,17 +1,12 @@
 import React, {Component} from 'react';
-import {AboutMeContent, ExperiencesContent, ProjectsContent} from "../Content/AboutContent";
+import {AboutMeContent} from "../Content/AboutContent";
 
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon, Box,
-} from '@chakra-ui/react'
+import {Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box,} from '@chakra-ui/react'
 
 export default class AboutScreen extends Component {
   private contentStyle: React.CSSProperties = {
-    height: window.innerHeight,
+    height: window.innerHeight - 500,
+    background: "#4caf50"
   }
 
   render() {
@@ -19,7 +14,7 @@ export default class AboutScreen extends Component {
       <Accordion defaultIndex={[0]} allowToggle>
         <AccordionItem>
           <h2>
-            <AccordionButton _expanded={{ bg: 'tomato', color: 'white'}}>
+            <AccordionButton _expanded={{bg: 'tomato', color: 'white'}}>
               <Box as="span" flex='1' textAlign='left'>
                 Who Am I?
               </Box>
@@ -27,15 +22,15 @@ export default class AboutScreen extends Component {
             </AccordionButton>
           </h2>
           <AccordionPanel pb={4}>
-            <AboutMeContent />
+            <AboutMeContent/>
           </AccordionPanel>
         </AccordionItem>
 
         <AccordionItem>
           <h2>
-              <AccordionButton _expanded={{ bg: 'tomato', color: 'white'}}>
+            <AccordionButton _expanded={{bg: 'tomato', color: 'white'}}>
               <Box as="span" flex='1' textAlign='left'>
-               Experiences
+                Experiences
               </Box>
               <AccordionIcon/>
             </AccordionButton>
@@ -47,9 +42,9 @@ export default class AboutScreen extends Component {
 
         <AccordionItem>
           <h2>
-              <AccordionButton _expanded={{ bg: 'tomato', color: 'white'}}>
+            <AccordionButton _expanded={{bg: 'tomato', color: 'white'}}>
               <Box as="span" flex='1' textAlign='left'>
-               Projects
+                Projects
               </Box>
               <AccordionIcon/>
             </AccordionButton>
