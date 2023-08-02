@@ -1,15 +1,7 @@
 import React from 'react';
 
-interface wSize {
-  wH: number;
-  wW: number;
-}
 
-interface Props {
-  windowSize?: wSize;
-}
-
-export const HomeContent = (props: Props) => {
+export const HomeContent = () => {
   const contentStyle: React.CSSProperties = {
     color: '#fff',
     background:
@@ -19,6 +11,7 @@ export const HomeContent = (props: Props) => {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
+    width: '100%'
   };
 
   const bannerName: React.CSSProperties = {
