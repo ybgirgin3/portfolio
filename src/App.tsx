@@ -1,24 +1,27 @@
-import React from 'react';
+import React, {JSX} from 'react';
 import Header from './Components/Header';
-import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import {Route, BrowserRouter, Routes} from 'react-router-dom';
+import {ChakraProvider} from "@chakra-ui/react";
 
 import HomeScreen from './Screens/HomeScreen';
 import AboutScreen from './Screens/AboutScreen';
-import SkillScreen from './Screens/SkillScreen';
+import ContactScreen from './Screens/ContactScreen';
 
-function App() {
+function App(): JSX.Element {
   return (
-    <React.StrictMode>
-      <BrowserRouter>
-        <Header />
-        <hr />
-        <Routes>
-          <Route path="/" Component={HomeScreen} />
-          <Route path="/aboutme" Component={AboutScreen} />
-          <Route path="/skills" Component={SkillScreen} />
-        </Routes>
-      </BrowserRouter>
-    </React.StrictMode>
+    <ChakraProvider>
+      <React.StrictMode>
+        <BrowserRouter>
+          <Header/>
+          <hr/>
+          <Routes>
+            <Route path="/" Component={HomeScreen}/>
+            <Route path="/aboutme" Component={AboutScreen}/>
+            <Route path="/contact" Component={ContactScreen}/>
+          </Routes>
+        </BrowserRouter>
+      </React.StrictMode>
+    </ChakraProvider>
   );
 }
 
