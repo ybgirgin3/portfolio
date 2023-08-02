@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class SkillScreen extends Component {
+export default class ContactScreen extends Component {
   render() {
     return <div>SkillScreen</div>;
   }
