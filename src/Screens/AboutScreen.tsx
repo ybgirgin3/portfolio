@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {AboutMeContent} from "../Content/AboutContent";
 
-import {Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box,} from '@chakra-ui/react'
+import {Accordion, AccordionButton, AccordionIcon, AccordionItem, AccordionPanel, Box} from '@chakra-ui/react'
 
 export default class AboutScreen extends Component {
   private contentStyle: React.CSSProperties = {
