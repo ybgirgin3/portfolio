@@ -4,18 +4,19 @@ import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import HomeScreen from './Screens/HomeScreen';
 import AboutScreen from './Screens/AboutScreen';
-import SkillScreen from './Screens/SkillScreen';
+import ContactScreen from './Screens/ContactScreen';
+import ProjectsScreen from './Screens/ProjectsScreen';
 
 function App() {
   return (
     <React.StrictMode>
       <BrowserRouter>
         <Header />
-        <hr />
         <Routes>
           <Route path="/" Component={HomeScreen} />
           <Route path="/aboutme" Component={AboutScreen} />
-          <Route path="/skills" Component={SkillScreen} />
+          <Route path="/projects" Component={ProjectsScreen} />
+          <Route path="/contact" Component={ContactScreen} />
         </Routes>
       </BrowserRouter>
     </React.StrictMode>
