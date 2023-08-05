@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Badge, Tag, Spin } from 'antd';
+import { Card, Badge, Tag, Empty } from 'antd';
 
 type Props = {
   mainTitle: string;
@@ -22,7 +22,7 @@ export const CardFactory: React.FC<Props> = (props) => {
             props.imageUrl ? (
               <img alt="imageUrl" src={props.imageUrl} />
             ) : (
-              <Spin />
+              <Empty />
             )
           }>
           <p style={titleStyle}>{props.innerTitle}</p>

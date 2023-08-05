@@ -19,6 +19,7 @@ export default class ContactScreen extends Component {
                   containerStyle={mainPageContainer}
                   icon={data.icon}
                 />
+                or
                 <h2 style={innerTitleStyle}>{data.children}</h2>
               </div>
             </TabPane>

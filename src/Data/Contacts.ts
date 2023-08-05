@@ -19,13 +19,13 @@ export const contact: CustomTab[] = [
     label: 'Github',
     text: 'Scan QR to Reach Out My Github Profile',
     icon: 'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg',
-    children: 'github.com/ybgirgin3',
+    children: 'https://github.com/ybgirgin3',
   },
   {
     key: '3',
     label: 'Reddit',
     text: 'Scan QR to Reach Out My Reddit Account',
     icon: 'https://upload.wikimedia.org/wikipedia/en/b/bd/Reddit_Logo_Icon.svg',
-    children: 'Reddit.com/blblbl',
+    children: 'https://www.reddit.com/user/SilentCryer',
   },
 ];
