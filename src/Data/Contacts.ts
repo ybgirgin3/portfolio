@@ -6,7 +6,7 @@ type CustomTab = {
   children: string;
 };
 
-export const contact: CustomTab[] = [
+export const Contact: CustomTab[] = [
   {
     key: '1',
     label: 'Gmail',

@@ -3,9 +3,9 @@ import Header from './Components/Header';
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 
 import HomeScreen from './Screens/HomeScreen';
-import AboutScreen from './Screens/AboutScreen';
 import ContactScreen from './Screens/ContactScreen';
 import ProjectsScreen from './Screens/ProjectsScreen';
+import ExperiencesScreen from './Screens/ExperiencesScreen';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" Component={HomeScreen} />
-          <Route path="/aboutme" Component={AboutScreen} />
+          <Route path="/aboutme" Component={ExperiencesScreen} />
           <Route path="/projects" Component={ProjectsScreen} />
           <Route path="/contact" Component={ContactScreen} />
         </Routes>

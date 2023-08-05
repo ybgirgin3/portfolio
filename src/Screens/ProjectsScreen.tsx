@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Row } from 'antd';
 
-import { projects } from '../Data/Projects';
+import { Projects } from '../Data/Projects';
 import { CardFactory } from '../Components/CardFactory';
 
 // styling
@@ -18,13 +18,13 @@ export default class ProjectsScreen extends Component {
       <div style={this.container}>
         {/* first row */}
         <Row style={this.rowStyle}>
-          {projects.firstRow.map((project, index) => (
+          {Projects.firstRow.map((project, index) => (
             <CardFactory key={index} {...project} />
           ))}
         </Row>
         {/* second row */}
         <Row style={this.rowStyle}>
-          {projects.secondRow.map((project, index) => (
+          {Projects.secondRow.map((project, index) => (
             <CardFactory key={index} {...project} />
           ))}
         </Row>

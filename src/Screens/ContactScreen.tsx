@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { QRCode } from 'antd';
 import { Tabs } from 'antd';
 import TabPane from 'antd/es/tabs/TabPane';
-import { contact } from '../Data/Contacts';
+import { Contact } from '../Data/Contacts';
 import { QRCodeFactory } from '../Components/QRCodeFactory';
 
 export default class ContactScreen extends Component {
@@ -10,7 +10,7 @@ export default class ContactScreen extends Component {
     return (
       <div>
         <Tabs centered defaultActiveKey="1" type="card" size="large">
-          {contact?.map((data, _) => (
+          {Contact?.map((data, _) => (
             <TabPane key={data.key} tab={data.label}>
               <div style={mainPageContainer}>
                 <h1 style={titleStyle}>{data.text}</h1>

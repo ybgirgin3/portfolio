@@ -1,4 +1,4 @@
-export const projects = {
+export const Projects = {
   firstRow: [
     {
       mainTitle: 'KDynamic',
@@ -36,6 +36,16 @@ export const projects = {
       langs: ['python', 'react', 'nodejs', 'nestjs'],
       projectType: 'FullStack',
     },
+    {
+      mainTitle: 'Hand Writing Recognition',
+      innerTitle:
+        'Math implementation from scratch for Hand Writing Recognition with No AI Library',
+      imageUrl:
+        'https://raw.githubusercontent.com/ybgirgin3/Hand-Writing-Recognition/main/docs/m1.png',
+      extraUrl: 'https://github.com/ybgirgin3/Hand-Writing-Recognition',
+      langs: ['jupyter-notebook', 'python', 'machine-learning', 'ml'],
+      projectType: 'ML',
+    },
   ],
   secondRow: [
     {
@@ -49,7 +59,7 @@ export const projects = {
     {
       mainTitle: 'Regexes',
       innerTitle: 'Common Regex Factory for python',
-      extraUrl: 'https://github.com/ybgirgin3/Regexes',
+      extraUrl: 'https://pypi.org/project/Regexes/',
       langs: ['python', 'pip', 'package'],
       projectType: 'Python Package',
     },
@@ -61,16 +71,6 @@ export const projects = {
         'https://raw.githubusercontent.com/ybgirgin3/EpicGamesNotification/main/docs/Epic-Games-logo.png',
       langs: ['python', 'scraper', 'email', 'notification', 'MacOS'],
       projectType: 'Scraper',
-    },
-    {
-      mainTitle: 'Hand Writing Recognition',
-      innerTitle:
-        'Math implementation from scratch for Hand Writing Recognition with No AI Library',
-      imageUrl:
-        'https://raw.githubusercontent.com/ybgirgin3/Hand-Writing-Recognition/main/docs/m1.png',
-      extraUrl: 'https://github.com/ybgirgin3/Hand-Writing-Recognition',
-      langs: ['jupyter-notebook', 'python', 'machine-learning', 'ml'],
-      projectType: 'ML',
     },
   ],
 };
