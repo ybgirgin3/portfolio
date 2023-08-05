@@ -28,4 +28,11 @@ export const Contact: CustomTab[] = [
     icon: 'https://upload.wikimedia.org/wikipedia/en/b/bd/Reddit_Logo_Icon.svg',
     children: 'https://www.reddit.com/user/SilentCryer',
   },
+  {
+    key: '4',
+    label: 'LinkedIn',
+    text: 'Scan QR to Reach Out My LinkedIn Account',
+    icon: 'https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg',
+    children: 'https://www.linkedin.com/in/yusufgirgin/',
+  },
 ];

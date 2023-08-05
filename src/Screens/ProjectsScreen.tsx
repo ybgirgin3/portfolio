@@ -8,6 +8,7 @@ import { CardFactory } from '../Components/CardFactory';
 export default class ProjectsScreen extends Component {
   container: React.CSSProperties = {
     // backgroundColor: 'lightgrey',
+    // textAlign: 'center',
   };
   rowStyle: React.CSSProperties = {
     marginTop: '20px',
