@@ -10,8 +10,7 @@ type Props = {
   projectType: string;
 };
 
-// export default class CardFactory extends Component {
-export const CardFactory = (props: Props) => {
+export const CardFactory: React.FC<Props> = (props) => {
   return (
     <div>
       <Badge.Ribbon text={props.projectType} color="blue">
@@ -19,10 +18,16 @@ export const CardFactory = (props: Props) => {
           title={props.mainTitle}
           bordered={true}
           style={cardStyle}
-          cover={props.imageUrl ? <img src={props.imageUrl} /> : <Spin />}>
+          cover={
+            props.imageUrl ? (
+              <img alt="imageUrl" src={props.imageUrl} />
+            ) : (
+              <Spin />
+            )
+          }>
           <p style={titleStyle}>{props.innerTitle}</p>
           <a href={props.extraUrl} style={{ color: 'blue' }}>
-            More Info...
+            See Project..
           </a>
           <br></br>
           <br></br>
@@ -35,11 +40,6 @@ export const CardFactory = (props: Props) => {
       </Badge.Ribbon>
     </div>
   );
-};
-
-const h1Style: React.CSSProperties = {
-  fontSize: '30px',
-  textAlign: 'center',
 };
 
 const cardStyle: React.CSSProperties = {
