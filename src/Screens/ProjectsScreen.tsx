@@ -7,10 +7,14 @@ import { CardFactory } from '../Components/CardFactory';
 // styling
 export default class ProjectsScreen extends Component {
   container: React.CSSProperties = {
-    // backgroundColor: 'lightgrey',
+    backgroundColor: '#364d79',
     // textAlign: 'center',
   };
   rowStyle: React.CSSProperties = {
+    // marginTop: '20px',
+  };
+
+  innerContainerStyle: React.CSSProperties = {
     marginTop: '20px',
   };
 
@@ -20,7 +24,9 @@ export default class ProjectsScreen extends Component {
         {/* first row */}
         <Row style={this.rowStyle}>
           {Projects.map((project, index) => (
-            <CardFactory key={index} {...project} />
+            <div style={this.innerContainerStyle}>
+              <CardFactory key={index} {...project} />
+            </div>
           ))}
         </Row>
       </div>
