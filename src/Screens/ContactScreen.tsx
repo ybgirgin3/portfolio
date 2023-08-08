@@ -33,7 +33,6 @@ export default class ContactScreen extends Component {
 const mainPageContainer: React.CSSProperties = {
   width: '100%',
   height: window.innerHeight - 200,
-  // backgroundColor: 'wheat',
   display: 'flex',
   flexDirection: 'column',
   textAlign: 'center',
