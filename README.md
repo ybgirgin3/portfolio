@@ -1,1 +1,1 @@
-https://yusubgirgin.netlify.app/
+https://yusufbgirgin.netlify.app/

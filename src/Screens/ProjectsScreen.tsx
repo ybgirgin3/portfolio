@@ -19,13 +19,7 @@ export default class ProjectsScreen extends Component {
       <div style={this.container}>
         {/* first row */}
         <Row style={this.rowStyle}>
-          {Projects.firstRow.map((project, index) => (
-            <CardFactory key={index} {...project} />
-          ))}
-        </Row>
-        {/* second row */}
-        <Row style={this.rowStyle}>
-          {Projects.secondRow.map((project, index) => (
+          {Projects.map((project, index) => (
             <CardFactory key={index} {...project} />
           ))}
         </Row>

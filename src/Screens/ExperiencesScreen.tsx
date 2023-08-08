@@ -43,6 +43,6 @@ const container: React.CSSProperties = {
   justifyContent: 'center',
   alignItems: 'center',
   marginTop: '50px',
-  width: window.innerWidth,
+  width: '100%',
   height: window.innerHeight - 200,
 };
